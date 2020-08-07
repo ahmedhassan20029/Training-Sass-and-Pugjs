@@ -1,0 +1,18 @@
+/* file grid
+    this is style box sizing end container
+*/
+* {
+    box-sizing: border-box;
+}
+%container {
+    width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+%listUnStyled {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}

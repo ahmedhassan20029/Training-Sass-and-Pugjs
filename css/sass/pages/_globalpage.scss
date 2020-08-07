@@ -1,0 +1,13 @@
+/*
+    this style file globalpage
+*/
+@font-face {
+    src: url(../../../font/Lato-Regular.ttf);
+    font-family: 'Lato-Regular';
+}
+body {
+    font-family: 'Lato-Regular';
+    text-transform: $textTransform;
+    margin: 0;
+    padding: 0;
+}
