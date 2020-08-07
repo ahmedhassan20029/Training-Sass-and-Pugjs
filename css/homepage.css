@@ -93,6 +93,10 @@ nav ul li a:hover {
   margin: 10px;
   border-radius: 50%;
 }
+.demo .slider ul li:hover {
+  border: 2px solid #e2494c;
+  background-color: transparent;
+}
 
 /*end  section slider*/
 
