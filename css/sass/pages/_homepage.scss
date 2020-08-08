@@ -1,7 +1,6 @@
 /*start section slider*/
 .demo {
     @extend %container;
-
     p {
         width: 80%;
         margin: 0 auto;
@@ -10,17 +9,14 @@
         font-weight: bold;
         line-height: 2;
     }
-
     .slider {
         img {
             min-width: 100%;
             height: 500px;
         }
-
         ul {
             @extend %listUnStyled;
             justify-content: center;
-
             li {
                 width: 20px;
                 height: 20px;
@@ -37,3 +33,32 @@
 }
 
 /*end  section slider*/
+/*start section services*/
+.headingStyle {
+    text-align: center;
+    margin-top: 50px !important;
+    position: relative;
+    @extend %container;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: $childColor;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+    }
+
+    h1 {
+        margin: 0;
+        background-color: $minColor;
+        color: $whiteColor;
+        display: inline-block;
+        padding: 10px 100px;
+        border-radius: 15px;
+    }
+}
+
+/*end section services*/

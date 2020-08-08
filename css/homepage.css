@@ -10,6 +10,7 @@ body {
   text-transform: capitalize;
   margin: 0;
   padding: 0;
+  height: 2000px;
 }
 
 nav {
@@ -49,27 +50,6 @@ nav ul li a:hover {
   margin: 65px 0;
 }
 
-/* file grid
-    this is style box sizing end container
-*/
-* {
-  box-sizing: border-box;
-}
-
-.demo, nav {
-  width: 1200px;
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.demo .slider ul, nav ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  list-style: none;
-}
-
 /*start section slider*/
 .demo p {
   width: 80%;
@@ -99,5 +79,51 @@ nav ul li a:hover {
 }
 
 /*end  section slider*/
+/*start section services*/
+.headingStyle {
+  text-align: center;
+  margin-top: 50px !important;
+  position: relative;
+}
+.headingStyle::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #9c9c9c;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+}
+.headingStyle h1 {
+  margin: 0;
+  background-color: #e2494c;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 100px;
+  border-radius: 15px;
+}
+
+/*end section services*/
+/* file grid
+    this is style box sizing end container
+*/
+* {
+  box-sizing: border-box;
+}
+
+nav, .demo, .headingStyle {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav ul, .demo .slider ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
 
 /*# sourceMappingURL=homepage.css.map */

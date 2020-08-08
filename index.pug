@@ -1,3 +1,4 @@
+include index/_mixien
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -11,12 +12,15 @@ html(lang="en")
         //- end nav
         //- start section slider
         div.demo
-            p "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eum veritatis porro officiis dolor. Quas modi, eius rem dolor incidunt omnis atque voluptas quia? Est tenetur saepe sequi hic quo".
+            p "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eum veritatis porro officiis dolor. Quas modi, eius rem dolor incidunt omnis atque voluptas quia? Est tenetur saepe sequi hic quo."
             .slider
                 img(src="img/slider.jpg", alt="", srcset="")
                 ul
                     - for (var i = 0; i <= 3; i++)
                       li
         //- end section slider
+        //- start section services 
+        +heading('our services')
+        
 
         
