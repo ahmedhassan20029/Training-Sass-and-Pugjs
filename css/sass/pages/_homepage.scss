@@ -34,31 +34,38 @@
 
 /*end  section slider*/
 /*start section services*/
-.headingStyle {
-    text-align: center;
-    margin-top: 50px !important;
-    position: relative;
+.services {
     @extend %container;
 
-    &::before {
-        content: '';
-        width: 100%;
-        height: 2px;
-        background-color: $childColor;
-        display: block;
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-    }
+    .headingStyle {
+        text-align: center;
+        margin-top: 50px !important;
+        position: relative;
 
-    h1 {
-        margin: 0;
-        background-color: $minColor;
-        color: $whiteColor;
-        display: inline-block;
-        padding: 10px 100px;
-        border-radius: 15px;
+        &::before {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: $childColor;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+        }
+
+        h1 {
+            margin: 0;
+            background-color: $minColor;
+            color: $whiteColor;
+            display: inline-block;
+            padding: 10px 100px;
+            border-radius: 15px;
+        }
+    }
+    .artciles {
+        display: flex;
     }
 }
+
 
 /*end section services*/

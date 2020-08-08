@@ -5,6 +5,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document sass
+        link(rel="stylesheet", href="css/all.min.css")
         link(rel='stylesheet' href='css/homepage.css')
     body
         //- start nav
@@ -19,8 +20,22 @@ html(lang="en")
                     - for (var i = 0; i <= 3; i++)
                       li
         //- end section slider
-        //- start section services 
-        +heading('our services')
-        
+        //- start section services
+        .services
+            +heading('our services')
+            .artciles
+                div
+                    i(class='fab fa-facebook-f')
+                    h2 indonectetus facilis
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam sint architecto consectetur rem veritatis fugiat?
+                    a(href='#') read more
+                div
+                    h2 indonectetus facilis
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam sint architecto consectetur rem veritatis fugiat?
+                    a(href='#') read more
+                div
+                    h2 indonectetus facilis
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam sint architecto consectetur rem veritatis fugiat?
+                    a(href='#') read more
 
         
