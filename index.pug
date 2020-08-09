@@ -10,7 +10,6 @@ html(lang="en")
     body
         //- start nav
         include index/_nav
-        //- end nav
         //- start section slider
         div.demo
             p "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eum veritatis porro officiis dolor. Quas modi, eius rem dolor incidunt omnis atque voluptas quia? Est tenetur saepe sequi hic quo."
@@ -19,23 +18,54 @@ html(lang="en")
                 ul
                     - for (var i = 0; i <= 3; i++)
                       li
-        //- end section slider
         //- start section services
         .services
             +heading('our services')
             .artciles
                 div
-                    i text
+                    i(class='fab fa-artstation')
                     h2 indonectetus facilis
                     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam sint architecto consectetur rem veritatis fugiat?
                     a(href='#') read more
                 div
+                    i(class='fas fa-cogs')
                     h2 indonectetus facilis
                     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam sint architecto consectetur rem veritatis fugiat?
                     a(href='#') read more
                 div
+                    i(class='fas fa-users')
                     h2 indonectetus facilis
                     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam sint architecto consectetur rem veritatis fugiat?
                     a(href='#') read more
+        //- start section our team
+        .team
+            +heading('our team')
+            .players
+                div
+                    img(src="img/faceb.jpg", alt="")
+                    p name:#[span jone don]
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, mollitia fuga molestiae itaque nostrum repellendus animi.
+                    a(href='#') view profile
+                div
+                    img(src="img/faceb.jpg", alt="")
+                    p name:#[span jone don]
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, mollitia fuga molestiae itaque nostrum repellendus animi.
+                    a(href='#') view profile
+                div
+                    img(src="img/faceb.jpg", alt="")
+                    p name:#[span jone don]
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, mollitia fuga molestiae itaque nostrum repellendus animi.
+                    a(href='#') view profile
+        //- start section gallery 
+        .gallery
+            +heading('gallery')
+            .gall-img
+                div
+                    img(src="img/faceb.jpg", alt="")
+                div
+                    img(src="img/faceb.jpg", alt="")
+                div
+                    img(src="img/faceb.jpg", alt="")
 
+    
         
