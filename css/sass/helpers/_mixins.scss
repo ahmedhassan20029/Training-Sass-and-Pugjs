@@ -1,4 +1,19 @@
 // media query
+@mixin screenMob {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin screenMudiam {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin screenSmall {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
 @mixin screenLarg {
     @media (min-width: 1200px) {
         @content;

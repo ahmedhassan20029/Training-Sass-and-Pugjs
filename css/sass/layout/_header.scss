@@ -1,11 +1,20 @@
 /* start section nav*/
 nav {
-    margin-top: 50px!important;
+    margin-top: 50px !important;
     display: flex;
     @extend %container;
 
+    @include screenMob {
+        display: block;
+        position: relative;
+    }
+
     div {
         flex: 2;
+
+        @include screenMob {
+            flex: none;
+        }
 
         h1 {
             letter-spacing: 1.5px;
@@ -18,23 +27,67 @@ nav {
         }
     }
 
-    ul {
+    ul:nth-of-type(1) {
         @extend %listUnStyled;
         background-color: $minColor;
         border-radius: 15px;
-        padding-top: 20px!important;
+        padding-top: 20px !important;
+
+        @include screenMob {
+            border-radius: 0px;
+            padding: 20px 0 20px 0 !important;
+            margin-top: 20px !important;
+            display: none;
+        }
+
         li {
             margin: 0px 20px;
+            display: inline-block;
+
+            @include screenMob {
+                display: block;
+                margin-bottom: 15px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    border-bottom: 1.5px solid $whiteColor;
+                    padding: 5px;
+                }
+            }
+
             a {
                 text-decoration: none;
                 color: $whiteColor;
+
                 &:hover {
                     color: $childColor;
                 }
             }
         }
     }
+
+    ul:nth-of-type(2) {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        list-style: none;
+        display: none;
+        cursor: pointer;
+        @include screenMob {
+            display: block;
+        }
+
+        li {
+            width: 7px;
+            height: 7px;
+            margin-bottom: 4px;
+            background-color: $minColor;
+            border-radius: 50%;
+        }
+    }
 }
+
 .hr {
     height: 2px;
     background-color: #e7e7e7;
